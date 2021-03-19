@@ -84,9 +84,9 @@ public class BootSpringBootApplication {
 
 ---------------------------------------
 
-[link keyword][id]
+[parkjunseoung][id]
 
-[id]: URL "Optional Title here"
+[id]: https://github.com/ParkJunSoung/MadOX99 "눌러봐"
 
 // code
 Link: [Google][googlelink]
