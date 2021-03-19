@@ -96,6 +96,18 @@ Link: [Google][googlelink]
 [송동민 링크](https://naver.com "네이버")
 
 <http://google.com>
+
+*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+
+~~cancelline~~
+
+![11111111](a.jpg "222222222")
 # 소개
 
 안녕하세요 
