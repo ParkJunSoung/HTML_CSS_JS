@@ -95,7 +95,7 @@ Link: [Google][googlelink]
 
 [송동민 링크](https://naver.com "네이버")
 
-<http://go0gle.com>
+<http://google.com>
 # 소개
 
 안녕하세요 
