@@ -94,6 +94,8 @@ Link: [Google][googlelink]
 [googlelink]: https://google.com "Go google"
 
 [송동민 링크](https://naver.com "네이버")
+
+<http://go0gle.com>
 # 소개
 
 안녕하세요 
