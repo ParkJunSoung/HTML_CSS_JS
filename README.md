@@ -1,6 +1,6 @@
 # 소개
 안녕하세요  
-<img src="a.jpg"> 
+<img src="b.jpg"> 
 
 * 박준성
 * Email : madox9999@gmail.com
