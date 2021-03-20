@@ -1,9 +1,14 @@
-# Angel Jaime
-
-<h2 align="center">About me</h2>
+#  유행을 선두하는 , 유행을 찾아가는 
 
 
-# Hi I'm Jessica 👋
+
+<img src="b.jpg" width="20%" alige=left border="3">   junSeoung Park    010-3605-8874   madox9999@gmail.com  
+ 
+[! [Anurag의 GitHub 통계] (https://github-readme-stats.vercel.app/api ? username = MadOX99 )] (https://github.com/anuraghazra/github-readme-stats)
+
+👋
+
+
 [![Linkedin Badge](https://img.shields.io/badge/-jlim-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jlim/)](https://www.linkedin.com/in/jlim/)
 [![Medium Badge](https://img.shields.io/badge/-@__jessicalim-000000?style=flat&labelColor=000000&logo=Medium&link=https://medium.com/@_jessicalim)](https://medium.com/@_jessicalim)
 [![Website Badge](https://img.shields.io/badge/-jessicalim.me-47CCCC?style=flat&logo=Google-Chrome&logoColor=white&link=https://jessicalim.me)](https://jessicalim.me)
