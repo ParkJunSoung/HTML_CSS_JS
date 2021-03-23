@@ -10,14 +10,27 @@
 |__군복무__|__복무기간__|__비고__|
 |----|----|----|
 |__91포병대대(포병)__|__2014.07~2016.04__|||
-
+-------------
++ Git    
  <img src= "https://github-readme-stats.vercel.app/api?username=ParkJunSoung&theme=dark">
  
- 
+ [<img src= "git.png" width= "5%" > ](https://github.com/ParkJunSoung, "바로가기")
 
-+ 사용 언어
--------------
 
+ [<img src= "naver.png" width= "5%" > ](https://blog.naver.com/opaswx1, "바로가기")
+
+
+
+
+<img src= "facebook-235-569311.png" width= "5%">
+<img src= "git.png" width= "5%" >
+<img src= "naver.png" width= "5%" > 
+
+
+
+
+
++ 자주 사용하는 언어
 
 
 
