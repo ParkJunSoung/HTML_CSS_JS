@@ -14,6 +14,8 @@
 + Git    
  <img src= "https://github-readme-stats.vercel.app/api?username=ParkJunSoung&theme=dark">
  
+ + 깃허브 아이콘에 링크 담기 
+  
  [<img src= "git.png" width= "5%" > ](https://github.com/ParkJunSoung, "바로가기")
 
 
