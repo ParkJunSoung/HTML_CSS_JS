@@ -27,20 +27,24 @@
 + Git    
  <img src= "https://github-readme-stats.vercel.app/api?username=ParkJunSoung&theme=dark">
  
+
+
+
  + 깃허브 아이콘에 링크 담기  
- [<img src= "git.png" width= "5%" > ](https://github.com/ParkJunSoung "바로가기")  
- [<img src= "naver.png" width= "5%" > ](https://blog.naver.com/opaswx1 "바로가기")
- [<img src= "facebook-235-569311.png" width= "5%" > ](https://www.facebook.com/profile.php?id=100063379015269 "바로가기")
+ [<img src= "git.png" width= "5%" > ](https://github.com/ParkJunSoung "바로가기")  [<img src= "naver.png" width= "5%" > ](https://blog.naver.com/opaswx1 "바로가기")[<img src= "facebook-235-569311.png" width= "5%" > ](https://www.facebook.com/profile.php?id=100063379015269 "바로가기")
+
+
+
 
 + 자주 사용하는 언어
-
-
 
 <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=ParkJunSoung&langs_count=8">
 
 
 
-<성격>
+
+
+## <성격>
 “단점을 극복하려는 노력”
 제 성격은 무슨 일을 하더라도 항상 긍정적인 자세로 웃음을 잃지 않고 일 처리가 잘 안되었을 때도 좌절하지 않
 으며 주어진 일을 해결하기 위해 끊임없이 방법을 찾고 끈기 있게 해결하며 항성 성실하고
@@ -49,7 +53,10 @@
 하지만 이 단점을 극복하기 위해 발표와 프레젠테이션 등의 적극적인 활동을 하며
 자신감을 기르기 위해 노력하고 있습니다.
 
-<생활신조>
+
+
+
+## <생활신조>
 제 신조는 금일사금일필(今日事今日畢) 오늘 할 일은 오늘 끝마치라는 뜻입니다. 신조를 정한 이유는 대부분의
 사람은 오늘 할 일을 제시간에 못하게 되면 금방 포기해버리고
 다음날 하면 된다고 생각하겠지만 저는 오늘 할 일은 오늘 꼭 모두 마무리를 해야 한다고
