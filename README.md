@@ -14,7 +14,6 @@
 
 
 
-
 || | | |
 |----|----|----|----|
 | |<img src= "https://img.shields.io/badge/%EC%9D%B4%EB%A6%84-Jun__Seoung-green"> |  <img src= "https://img.shields.io/badge/Tell-010--3605--8874-orange"> |  <img src= "https://img.shields.io/badge/E--mail-madox9999%40gmail.com-lightgrey">|
@@ -24,10 +23,10 @@
 |----|----|----|
 |__91포병대대(포병)__|__2014.07~2016.04__|||
 -------------
-+ Git    
++ Git 
+
  <img src= "https://github-readme-stats.vercel.app/api?username=ParkJunSoung&theme=dark">
  
-
 
 
  + 깃허브 아이콘에 링크 담기  
@@ -35,11 +34,9 @@
 
 
 
-
 + 자주 사용하는 언어
 
 <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=ParkJunSoung&langs_count=8">
-
 
 
 
@@ -52,7 +49,6 @@
 그런데 저는 여러 사람 앞에서 보고 있으면 떨리는 단점이 있습니다.
 하지만 이 단점을 극복하기 위해 발표와 프레젠테이션 등의 적극적인 활동을 하며
 자신감을 기르기 위해 노력하고 있습니다.
-
 
 
 
