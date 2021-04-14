@@ -1,0 +1,31 @@
+body
+{
+    text-align: center;
+   
+}
+table
+{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+.left
+{
+    text-align: left;
+}
+.right
+{
+    text-align: right;
+}
+table,td
+{
+    border:1px #000000 solid;
+}
+.middle
+{
+    text-align: center;
+}
+.red
+{
+    background-color: red;
+}

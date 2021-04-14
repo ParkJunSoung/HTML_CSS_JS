@@ -1,0 +1,36 @@
+
+
+span
+{
+    display: inline-block;
+    width: 100%;
+    text-transform: lowercase;
+    font-size: 100px;
+    line-height: 100px;
+}
+.span1
+{
+    display: inline-block;
+    width: 100%;
+    text-transform: lowercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    line-height: 100px;
+}
+.span2
+{
+    display: inline-block;
+    width: 100%;
+    text-transform: lowercase;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.red
+{
+    color: red;
+}
+.center
+{
+    text-align: left;
+    text-indent: 100px;
+}
