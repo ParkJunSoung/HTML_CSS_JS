@@ -1,0 +1,8 @@
+.img {
+    width: 400px;
+    -webkit-filter: sepia(10%);
+    filter: sepia(10%);
+    
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}

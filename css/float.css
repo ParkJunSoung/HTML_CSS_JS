@@ -1,0 +1,17 @@
+div{
+    display: inline-block;
+    border: 3px black solid;
+    width: 100px;
+    height: 100px;
+}
+.right{
+    background-color: blue;
+    float: right;
+}
+.left{
+    background-color: red;
+    float: left;
+}
+.clear{
+    clear: both;
+}
