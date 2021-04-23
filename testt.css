@@ -1,0 +1,25 @@
+#main{
+        
+        width: 50%;
+        height: 100%;
+    border: black 5px ridge;
+}
+
+#div1{
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 15%;
+    background-color: blue;
+}
+#div2{
+    position: absolute;
+    display: inline-block;
+    top: 30px;
+    background-color: darkgrey;
+}
+.class1{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+}

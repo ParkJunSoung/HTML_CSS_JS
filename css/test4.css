@@ -63,7 +63,7 @@ body {
     text-align: center;
     display: inline-block;
     position: fixed;
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 30%;
     font-size: 30px;
 }
@@ -76,6 +76,6 @@ body {
     height: 25px;
     color: #ffff;
     font-size: 15px;
-    margin-left: 560px;
+    margin-left: 540px;
     margin-top: 360px;
 }
