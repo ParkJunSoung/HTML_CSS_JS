@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+#title{
+    filter: opacity(80%);
+    color: white;
+    font-size: 50px;
+    
+}
+#title2{
+    color: white;
+    font-size: 25px;
+    
+}
+#img1{
+    filter: opacity(90%);
+    border: violet 6px;
+    border-radius: 80%;
+    overflow: auto;
+}
+#munu1{
+    display: inline-block;
+    position: absolute;
+    margin-left: 35%;
+    top: 50px;
+    color: #ffff;
+}
+#munu2{
+    display: inline-block;
+    position: absolute;
+    margin-left: 35%;
+    top: 100px;
+    color: #ffff;
+}
+#munu3{
+    display: inline-block;
+    position: absolute;
+    margin-left: 35%;
+    top: 150px;
+    color: #ffff;
+}
