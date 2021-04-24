@@ -1,0 +1,16 @@
+
+#div0{
+   display: inline-block;
+  
+   
+}
+#div1{
+    
+    display: inline-block;
+    position: fixed;
+    top: 50px;
+}
+#div3{
+    position: absolute;
+    top: 160px;
+}
