@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    
 }
 #title{
     filter: opacity(80%);
@@ -13,29 +14,19 @@ body{
     
 }
 #img1{
+   
     filter: opacity(90%);
     border: violet 6px;
-    border-radius: 80%;
+     /* border-radius: 80%;  */
     overflow: auto;
 }
-#munu1{
+
+.munu{
     display: inline-block;
-    position: absolute;
-    margin-left: 35%;
-    top: 50px;
+    position: relative;
+    margin-top: 20px;
+    margin: 30px;
     color: #ffff;
-}
-#munu2{
-    display: inline-block;
-    position: absolute;
-    margin-left: 35%;
-    top: 100px;
-    color: #ffff;
-}
-#munu3{
-    display: inline-block;
-    position: absolute;
-    margin-left: 35%;
-    top: 150px;
-    color: #ffff;
+    font-size: 20px;
+    text-decoration: solid;
 }
