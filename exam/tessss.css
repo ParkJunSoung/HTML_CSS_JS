@@ -1,0 +1,43 @@
+body{
+    background-image: url("https://astronomy.com/-/media/Images/Greatest%20Mysteries/41%20to%2050/Incoming.jpg?mw=600");
+    background-size: cover;
+}
+
+#title{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    filter: opacity(80%);
+}
+#star{
+    font-size: 20px;
+    position: relative;
+    color: white;
+}
+.munu{
+    color: white;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    margin-left: 40px;
+    margin-top: -20px;
+    top: 0px;
+}
+#center{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 480px;
+    color: white;
+    font-size: 20px;
+    
+}
+#link{
+    position: relative ;
+    display: inline-block;
+    border: 1px white solid;
+    color:white;
+    font-size: 15px;
+    margin-top: 400px;
+    margin-left: 550px;
+
+}
