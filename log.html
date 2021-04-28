@@ -5,23 +5,56 @@
     </head>
     <body>
         <script>
-          
-         function getname(){
+
+            /*function getname(){
              //변수생성
              let name = prompt("이름을 입력해주세요");
-             //네임이 빈칸이 아니면? 
+             //네임이 빈칸이 아니면?
              if(name != ""){
-                 // name+반갑습니다 출력 
+                 // name+반갑습니다 출력
                  alert(name+"님 반갑습니다")
              }
-             //값이 입력안되면 다시 함수 실행 (재귀호출) 자신을 호출함 
+             //값이 입력안되면 다시 함수 실행 (재귀호출) 자신을 호출함
              else {
                 getname();
              }
          }
          getname();
-        
-            // confirm("정말" + text + "이 맞나요?"); alert("안녕하세요" + text);
+
+        confirm("정말" + text + "이 맞나요?"); alert("안녕하세요" + text);
+
+        for( var i = 1; i <= 100; i++){
+            console.log(i);
+        }
+        */
+            function getname() {
+                //숫자를 입력해주세요 출력 
+                let num = prompt("숫자을 입력해주세요");
+                // 아무것도 입력되지 않으면 재귀함수 호출 
+                if (num == '') {
+
+                    getname()
+                    return 0;
+                }
+                //스트링타입을 넘버타입으로 수정 
+                num = Number(num);
+                //숫자가 아닐때 숫자를 입력해주세요 경고창 출력 
+                if (isNaN(num)) {
+                    alert('숫자를 입력해주세요');
+                    // 1이상 100이하면  1~100까지 로그 찍기 후 100 달성되면 완료되었습니다. 출력 
+                } else if (1 <= num && num <= 100) {
+                    for (var i = 0; i < 100; i++) {
+                        console.log(i);
+                        if (i == 100) {
+                            alert('완료되었습니다.');
+                        }
+                    }
+                    // 1이상 100이하 숫자가 아니면 출력 
+                } else {
+                    alert("1이상100이하를 입력해주세요");
+                }
+            }
+            getname();
         </script>
     </body>
 </html>
