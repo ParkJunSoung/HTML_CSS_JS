@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript</title>
+    </head>
+    <body>
+        <script>
+          
+         function getname(){
+             //변수생성
+             let name = prompt("이름을 입력해주세요");
+             //네임이 빈칸이 아니면? 
+             if(name != ""){
+                 // name+반갑습니다 출력 
+                 alert(name+"님 반갑습니다")
+             }
+             //값이 입력안되면 다시 함수 실행 (재귀호출) 자신을 호출함 
+             else {
+                getname();
+             }
+         }
+         getname();
+        
+            // confirm("정말" + text + "이 맞나요?"); alert("안녕하세요" + text);
+        </script>
+    </body>
+</html>
