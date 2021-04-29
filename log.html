@@ -30,20 +30,16 @@
             function getname() {
                 //숫자를 입력해주세요 출력 
                 let num = prompt("숫자을 입력해주세요");
-                // 아무것도 입력되지 않으면 재귀함수 호출 
-                if (num == '') {
-
-                    getname()
-                    return 0;
-                }
                 //스트링타입을 넘버타입으로 수정 
                 num = Number(num);
-                //숫자가 아닐때 숫자를 입력해주세요 경고창 출력 
-                if (isNaN(num)) {
-                    alert('숫자를 입력해주세요');
+                // 아무것도 입력되지 않으면 재귀함수 호출 
+                if (num == '' || isNaN(num)) {
+                    getname()
+                    return 0;
+                }             
                     // 1이상 100이하면  1~100까지 로그 찍기 후 100 달성되면 완료되었습니다. 출력 
-                } else if (1 <= num && num <= 100) {
-                    for (var i = 0; i < 100; i++) {
+                if (1 <= num && num <= 100) {
+                    for (var i = 0; i <= 100; i++) {
                         console.log(i);
                         if (i == 100) {
                             alert('완료되었습니다.');
