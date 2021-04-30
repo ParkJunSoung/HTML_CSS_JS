@@ -1,0 +1,60 @@
+<html >
+    <head>
+
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+        <style>
+            div{
+                width: 200px;
+                height: 30px;
+                float: left;
+                text-align: center;
+                margin-left: 20px;
+              
+            }
+            .gray{
+                background-color: gray;
+                color: white;
+                
+                border: 1px solid black;
+            }
+            .white{
+                background-color:white;
+                color: black;
+            }
+      
+       </style>
+    </head>
+    <body>
+        
+
+        <div id="btn1" class ="temp">html</div>
+        <div id="btn2" class ="temp2">css</div>
+        <div id="btn3" class ="temp3">javascript</div>
+        <script>
+            $(function(){
+                $("div").attr("class","gray");
+                $("#btn1").on("click",function(){
+                    $("div").attr("class","gray");
+                    $(this).attr("class","white");
+                    
+                });
+                $("#btn2").on("click",function(){
+                    $("div").attr("class","gray");
+                    $(this).attr("class","white");
+                });
+                $("#btn3").on("click",function(){
+                    $("div").attr("class","gray");
+                    $(this).attr("class","white");
+                });
+            });
+
+            
+          
+
+        </script>
+    </body>
+</html>

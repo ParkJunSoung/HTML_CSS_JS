@@ -1,0 +1,60 @@
+<html>
+    <head>
+
+        <title>Document</title>
+        <script
+        src="https://code.jquery.com/jquery-1.12.4.js"
+        integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+        crossorigin="anonymous"></script>
+    </head>
+    <style>
+        .hidden{
+            display: none;
+        }
+        .view{
+            display: block;
+        }
+    </style>
+    
+    <body>
+        <div id="main">
+        <div id="text"></div>
+        <button id="red">red</button>
+        <button id="blue">blue</button>
+        <button id="green">green</button>
+        </div>
+       <script> 
+        $(function (){
+            $("#main").attr("class","hidden");
+            df();
+            $("#red").on("click",function(){
+                alert("빨간색으로 바뀝니다.");
+                $("#text").css("color","#ff0000");
+            });
+            $("#blue").on("click",function(){
+                alert("파란색으로 바뀝니다.");
+                $("#text").css("color","#0000ff");
+            });
+            $("#green").on("click",function(){
+                alert("초록색으로 바뀝니다.");
+                $("#text").css("color","#00ff00");
+            });
+
+        });
+
+        function df(){
+            $("#main").attr("class","hidden");
+            let input = prompt("텍스트를 입력해주세요");
+            console.log(input);
+            if(input != ''){
+                $("#main").attr("class","view");
+                $("#text").text(input);
+            }else{
+                df()
+            }
+        }
+          
+        </script>
+
+    </body>
+</html>

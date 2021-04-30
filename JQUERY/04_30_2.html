@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.js"
+        integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+        crossorigin="anonymous"></script>
+    <style>
+    .bg{
+        display: inline-block;
+        width: 400px;
+        min-height: 200px;
+        background-color: gray;
+    }
+    .gray{
+        display: inline-block;
+        width: 400px;
+        height: 60px;
+        line-height: 60px;
+        background-color: gainsboro;
+    }
+    #btn{
+        display: inline-block;
+    
+        width: 80px;
+        height: 50px;
+    }
+    .ing{
+        display: inline-block;
+        width: 380px;
+        height: 50px;
+        background-color: white;
+        margin-left: 10px;
+        margin-top: 5px;
+        line-height: 50px;
+
+    }
+    </style>
+    <body>
+        <!-- <div id="text">가사등록하기</div>
+        
+        <button id="btn1">등록하기</button>
+        
+        <script>
+            $(function df() {
+                $("#btn1").on("click"),function(){
+                    let input = prompt("텍스트를 입력해주세요");
+                if (input != '') {
+                    $("#text").text(input);
+                }else df();
+            }}); -->
+        
+        <div class="bg">
+            <div class= "gray">기사입력하기</div>
+            <span id="temp"></span>
+            <!-- <span class="ing"></span> -->
+        </div>
+
+        <button id="btn">기사입력하기</button>
+        
+        <script>
+            $(function(){
+
+                $("#btn").on("click",function(){
+                    let title = prompt('기사를 입력해주세요');
+                    console.log(title);
+                    $("#temp").append('<span class="ing">'+title+'</span>');
+                });
+            });
+        </script>
+
+    </body>
+</html>
