@@ -1,0 +1,85 @@
+<html>
+    <head>
+
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+        <style></style>
+    </head>
+    <body>
+
+        <!-- 아이디 <input type="email"> <br/><br/> 비밀번호 <input type="password"><br/><br/>
+        성별 남자<input type="radio" name="a" value="남자"> 여자<input type="radio" name="a"
+        value="여자"> <br/><br/> 직업 <select> <option></option> <option>백엔드개발자</option>
+        <option>프론트엔드개발자</option> <option>서버관리자</option> </select> <br/><br/> 취미 <input
+        type="checkbox" name="hobby" value="true" id="check">개발 <input type="checkbox"
+        name="hobby" value="true" id="check">게임 <input type="checkbox" name="hobby"
+        value="true" id="check">낚시 <br/> <input type="checkbox" name="hobby"
+        value="true" id="check">운동 <input type="checkbox" name="hobby" value="true"
+        id="check">독서 <input type="checkbox" name="hobby" value="true" id="check">음악감상
+        <br/> <br/> <input type="button" value="취소" id="btn1"> <input type="button"
+        value="회원가입" id="btn2"> -->
+
+        아이디<input type="text" id="input1"><br/>
+        비밀번호<input type="password" id="input2"><br/>
+        성별
+        <input type="radio" name="sex" value="male">남자
+        <input type="radio" name="sex" value="female">여자<br/>
+        직업
+        <select id="job" name="job">
+            <option value=""></option>
+            <option value="1">프로그래머</option>
+            <option value="2">학생</option>
+            <option value="3">군인</option>
+        </select>
+        <br/>
+        취미
+        <input type="checkbox" name="hobby" value="1">개발
+        <input type="checkbox" name="hobby" value="2">게임
+        <input type="checkbox" name="hobby" value="3">낚시
+        <br/>
+        <input type="checkbox" name="hobby" value="4">운동
+        <input type="checkbox" name="hobby" value="5">독서
+        <input type="checkbox" name="hobby" value="6">음악감상
+        <br/>
+        <input type="reset" value="취소" id="btn1">
+        <button>
+            회원가입
+        </button>
+
+        <script>
+            $(function () {
+                var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+                $("button").on("click", function () {
+                    if ($("#input1").val().length < 5) {
+                        alert('아이디를 5자 이상 입력해주세요');
+                        return 0;
+                    } else if ($("#input1").val().match(regExp) == null) {
+                        alert('아이디는 이메일 형식입니다.')
+                    } else if ($("#input2").val().length < 5) {
+                        alert('패스워드를 5자 이상 입력해주세요');
+                        return 0;
+                    } else if ($("input:radio[name=sex]").length == "0") {
+                        alert('성별을 입력해주세요');
+                        return 0;
+                    } else if ($("#job").val() == "") {
+                        alert('직업를 입력해주세요');
+                        return 0;
+                    } else if ($("input:checkbox[name=hobby]:checked").length < 3) {
+                        alert('취미를 3가지 이상입력해주세요');
+                        return 0;
+                    } else {
+                        alert('회원가입이 완료되었습니다.');
+                    }
+                    // console.log($("input1").val()); console.log($("input2").val());
+                    // console.log($("input:radio[name=sex]").length); console.log($("#job").val());
+                    // console.log($("input:checkbox[name-hobby]:checked").length);
+                })
+
+            })
+        </script>
+    </body>
+
+</html>
