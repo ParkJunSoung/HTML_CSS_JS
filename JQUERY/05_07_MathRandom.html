@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+        <style>
+        
+      
+       </style>
+    </head>
+    <body>
+
+   
+        <script>
+            // function test ()
+            // {
+            //     console.log(“ok”);
+            // }
+            // setTimeout(test(),2000);
+            // setInterval(test(),2000);
+            var gogo = 1;
+            let timer = setInterval(function(){
+                gogo = Math.random();
+                gogo = gogo * 2000;
+                gogo = Math.ceil(gogo);
+                console.log(gogo);
+                gogo++;
+            },500);
+        </script>
+    </body>
+</html>
