@@ -1,0 +1,71 @@
+
+<html>
+    <head>
+
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+        <style>
+        
+      
+       </style>
+    </head>
+    <body>
+        <table border="1px" width="1000px" height="500px">
+         <tr>
+             <td><input type="checkbox" id="checkall" value="1">확인</td>
+             <td>제목</td>
+             <td>글쓴시간</td>
+         </tr>
+         <tr>
+            <td><input type="checkbox" name="check"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="check"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="check"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="check"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="check"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="check"></td>
+            <td></td>
+            <td></td>
+        </tr>
+  
+
+        </table>
+        <button>로그</button>
+   
+        <script>
+            $(function(){
+                $("#checkall").on("click", function () {
+                 if( $(this).prop("checked") == true){
+                     console.log('모두체크')
+                     $("input:checkbox[name=check]").prop("checked", true);
+                 }else{
+                    console.log('모두해제')
+                    $("input:checkbox[name=check]").prop("checked", false);
+                 }
+                });
+             })
+        </script>
+    </body>
+</html>
