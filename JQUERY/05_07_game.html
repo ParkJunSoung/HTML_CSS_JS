@@ -1,0 +1,263 @@
+<html>
+    <head>
+
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+        <style>
+            img {
+                width: 80px;
+                height: 80px;
+            }
+            #marioimg {
+                width: 100px;
+                height: 100px;
+            }
+            #bg {
+                z-index: 10;
+                display: inline-block;
+                position: relative;
+                width: 100%;
+                height: 90%;
+                border: 0.5px solid white;
+
+            }
+            #underbg {
+                overflow: hidden;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 89%;
+
+                z-index: 1;
+                background-attachment: fixed;
+
+            }
+            #main {
+                overflow: hidden;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 90%;
+
+                z-index: 100;
+                background-color: white;
+
+            }
+            #bgimg {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .ch {
+                position: absolute;
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+            }
+            .ch #mario {
+                width: 100px;
+                height: 100px;
+            }
+            #mario {
+                position: absolute;
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+
+            }
+            #btn1 {
+                display: inline-block;
+                position: absolute;
+                top: 450px;
+                left: 400px;
+                width: 500px;
+                height: 50px;
+                border-radius: 20px;
+            }
+            #title {
+                color: black;
+                text-align: center;
+                font-size: 70px;
+            }
+            #body {
+                color: black;
+                display: inline-block;
+                position: absolute;
+                font-size: 30px;
+                top: 120px;
+                left: 750px;
+            }
+            #score {
+                z-index: 200;
+                display: inline-block;
+                position: absolute;
+                width: 200px;
+                height: 100px;
+                left: 40%;
+                top: 20px;
+                border: 2px solid black;
+                font-size: 80px;
+                
+            }
+            #title2 {
+                display: inline-block;
+                position: absolute;
+                left: 450px;
+            }
+            #marioimg2 {
+                width: 300px;
+                height: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="bg">
+            <div class="ch" id="mario"><img id="marioimg" src="man.gif"></div>
+            <div class="ch" id="killer"><img src="pngtree-bullet-png-image_510074-removebg-preview (1).png"></div>
+            <div class="ch" id="gb"><img src="gb.gif"></div>
+
+        </div>
+        <div id="underbg"><img
+            id="bgimg"
+            src="http://tpholic.com/xe/files/attach/images/76/583/245/003/supermario.jpg"></div>
+        <div id="main">
+            <div id="title">자바스크립트 마리오</div>
+            <div id="body">개발자: 박준성</div>
+            <div id="title2"><img id="marioimg2" src="man.gif"></div>
+            <button id="btn1">게임시작</button>
+          
+        </div>
+        <div id="score"></div>
+
+        <script>
+            var jumping = 0;
+            var alive = 0;
+            var misiling = 0;
+            var score = 0;
+            var start = 0;
+
+            var timmer = setInterval(function () {
+
+                if (start == 1) {
+
+                    let mario_bottom = parseInt($("#mario").css("bottom"), 10);
+                    let gb_left = parseInt($("#gb").css("left"), 10);
+                    let killer_left = parseInt($("#killer").css("left"), 10);
+
+                    if (mario_bottom < 50 && gb_left < 100 && gb_left > 50 && alive == 0) {
+                        alert("마리오 사망");
+                        $("#mario").hide();
+                        $("#main").show()
+                        alive = 1;
+                    }
+
+                    if ((gb_left - killer_left) < 50 && misiling == 1) {
+
+                        $("#killer").stop();
+                        $("#killer").hide();
+                        misiling = 0;
+
+                        $("#gb").stop();
+                        $("#gb").hide();
+                        gb_default();
+
+                        scoreplus(200);
+                    }
+                }
+
+            }, 100)
+
+            function mario_default() {
+                $("#mario").show();
+                $("#mario").css({left: "0px", bottom: "10px"});
+            }
+
+            function scoreplus(num) {
+                score = score + num;
+                $("#score").text(score);
+            }
+
+            function gb_default() {
+                let movspeed = Math.ceil(Math.random() * 10000);
+                if (movspeed < 4000) {
+                    movspeed = 4000;
+                }
+                if (movspeed > 8000) {
+                    movspeed = 8000;
+                }
+                $("#gb").show();
+                $("#gb").css({right: "0px", bottom: "10px"});
+                $("#gb").animate({
+                    right: "100%"
+                }, movspeed, function () {
+                    if (alive == 0) {
+                        scoreplus(100);
+                    }
+                    gb_default();
+                });
+            }
+
+            function killer_default() {
+                if (misiling == 0 && alive == 0) {
+                    misiling = 1;
+                    $("#killer").show();
+                    $("#killer").css({left: "100px", bottom: "10px"});
+                    $("#killer").animate({
+                        left: "100%"
+                    }, 1000, function () {
+                        misiling = 0;
+                    });
+                }
+            }
+
+            function startnow() {
+
+                // $("#bgimg").animate({left:"-=100%"},15000,function(){
+                // $("#bgimg").clone().appendTo("#unnderbg"); });
+
+                $("body").keydown(function (event) {
+                    if (event.keyCode == 13) {
+                        killer_default();
+                    }
+                    if (event.keyCode == 32) {
+                        if (jumping == 0) {
+                            jumping = 1;
+                            $("#mario").animate({
+                                bottom: "200px"
+                            }, 500);
+                            $("#mario").animate({
+                                bottom: "0px"
+                            }, 500, function () {
+                                jumping = 0;
+                            });
+                        }
+                    }
+                });
+
+                mario_default();
+                gb_default();
+            }
+
+            $(function () {
+
+                $("#mario").hide();
+                $("#killer").hide();
+                $("#gb").hide();
+
+                $("button").on("click", function () {
+                    $("#main").hide();
+                    start = 1;
+                    startnow();
+
+                });
+
+            });
+        </script>
+
+    </body>
+</html>
