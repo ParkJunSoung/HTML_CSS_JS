@@ -1,0 +1,202 @@
+<html>
+    <head>
+
+        <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+        <style>
+            div {
+                display: inline-block;
+
+            }
+            body {
+                background-image: url("https://mblogthumb-phinf.pstatic.net/MjAyMDAzMTVfMjY0/MDAxNTg0MjU5ODgyNTQ5.Uwz1guxMV9SVXLW7iDEDmtlbVstumgn84AeSu42rjyMg.WcCNq2ZO5hFqcV8y9RbyiBNCW0TNSXAZk5co7rpnv7Qg.JPEG.se___ovo/%EC%BB%B4%ED%93%A8%ED%84%B0%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4%EC%9E%90%EC%97%B002.jpg?type=w800");
+                background-size: cover;
+            }
+            #main {
+                width: 100%;
+                height: 90%;
+               
+            }
+            .btn {
+                position: relative;
+                top: 350px;
+                width: 140px;
+                height: 40px;
+                display: inline-block;
+                font-size: 20px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 20px;
+                border: 1px solid black;
+
+            }
+            #holder {
+                display: flex;
+                width: 200px;
+                height: 200px;
+                position: relative;
+                top: 130px;
+                left: 520px;
+                overflow: hidden;
+                line-height: 200px;
+                text-align: center;
+                border: 5px dashed black;
+                border-radius: 50px;
+            }
+            #img1 {
+                display: inline-block;
+                position: absolute;
+                top: 350px;
+                left: 530px;
+            }
+            #appbar {
+                display: inline-block;
+                top: 0;
+                width: 100%;
+                height:120px;
+                background-color: black;
+                color: white;
+                font-size: 60px;
+                line-height: 120px;
+                text-align: center;
+                filter: opacity(0.4);
+
+            }
+            .snip1535 {
+                top: 300px;
+                background-color: gold;
+                border: none;
+                color: #ffffff;
+                cursor: pointer;
+                display: inline-block;
+                font-family: 'BenchNine', Arial, sans-serif;
+                font-size: 1em;
+                font-size: 22px;
+                line-height: 1em;
+                margin: 15px 40px;
+                outline: none;
+                padding: 12px 40px 10px;
+                position: relative;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .snip1535:after,
+            .snip1535:before {
+                border-color: transparent;
+                -webkit-transition: all 0.25s;
+                transition: all 0.25s;
+                border-style: solid;
+                border-width: 0;
+                content: "";
+                height: 24px;
+                position: absolute;
+                width: 24px;
+            }
+            .snip1535:before {
+                border-color: gold;
+                border-right-width: 2px;
+                border-top-width: 2px;
+                right: -5px;
+                top: -5px;
+            }
+            .snip1535:after {
+                border-bottom-width: 2px;
+                border-color: gold;
+                border-left-width: 2px;
+                bottom: -5px;
+                left: -5px;
+            }
+            .snip1535.hover,
+            .snip1535:hover {
+                background-color: gold5;
+            }
+            .snip1535.hover:after,
+            .snip1535.hover:before,
+            .snip1535:hover:after,
+            .snip1535:hover:before {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <button id="btn1" class="snip1535">회색으로</button>
+            <button id="btn2" class="snip1535">흐리게</button>
+            <button id="btn3" class="snip1535">그림자</button>
+            <button id="btn4" class="snip1535">50% 투명</button>
+            <button id="btn5" class="snip1535">좌로 90도 회전</button>
+            <button id="btn6" class="snip1535">우로 90도 회전</button>
+            <button id="btn7" class="snip1535">이미지 초기화</button>
+        </div>
+        <div id="img1">
+            <input type="file" value="파일 선택"></div>
+        <div id="holder"></div>
+        <div id="appbar"><b style="font-size: 70px; color: aqua;" >ㅇ ㅣ ㅁ ㅣ ㅈ ㅣ</b>  
+        </div>
+        <script>
+
+            $("#main").hide();
+            $(".hover").mouseleave(function () {
+                $(this).removeClass("hover");
+            });
+
+            var upload = document.getElementsByTagName('input')[0],
+                holder = document.getElementById('holder');
+
+            if (typeof window.FileReader === 'undefined') {
+                state.className = 'fail';
+
+            }
+
+            upload.onchange = function (e) {
+                e.preventDefault();
+
+                var file = upload.files[0],
+                    reader = new FileReader();
+                reader.onload = function (event) {
+                    var img = new Image();
+                    img.src = event.target.result;
+                    holder.appendChild(img);
+                    $("#main").show();
+                };
+                reader.readAsDataURL(file);
+
+                return false;
+            };
+            $(function () {
+                $("#btn1").on("click", function () {
+                    $("#holder").css("-webkit-filter", "grayscale(100%)");
+
+                });
+                $("#btn2").on("click", function () {
+                    $("#holder").css("-webkit-filter", "blur(5px)");
+
+                });
+                $("#btn3").on("click", function () {
+                    $("#holder").css("-webkit-filter", "drop-shadow(16px 16px 10px black");
+
+                });
+                $("#btn4").on("click", function () {
+                    $("#holder").css("-webkit-filter", "opacity(50%)");
+
+                });
+                $("#btn5").on("click", function () {
+                    $("#holder").css("-webkit-transform", " rotate(90deg)");
+
+                });
+                $("#btn6").on("click", function () {
+                    $("#holder").css("-webkit-transform", " rotate(-90deg)");
+
+                });
+                $("#btn7").on("click", function () {
+                    $("#holder").css({"transform": "", "filter": ""});
+
+                });
+            });
+        </script>
+    </body>
+</html>
